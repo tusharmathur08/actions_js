@@ -1,0 +1,5 @@
+name: "checking file action"
+description: "testing my file checking action"
+runs:
+  using: node12
+  main: index.js
