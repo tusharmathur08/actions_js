@@ -11,7 +11,5 @@ jobs:
    runs-on: ubuntu-latest
    steps:
 
-     - uses: actions/checkout@v4.1.1
-     
-     - name: testing step
-       uses: ./action.yml@main
+     - uses: actions/checkout@v3
+     - uses: tusharmathur08/actions_js@main
