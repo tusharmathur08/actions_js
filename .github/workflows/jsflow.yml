@@ -1,0 +1,15 @@
+name: Pilot JSON Workflow
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+
+ pilot_job:
+   runs-on: ubuntu:latest
+   steps:
+
+     - name: testing step
+       run: echo "yello actions"
