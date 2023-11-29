@@ -12,4 +12,4 @@ jobs:
    steps:
 
      - name: testing step
-       run: echo "yello actions"
+       uses: ./action.yml@main
