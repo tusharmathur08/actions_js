@@ -8,7 +8,7 @@ on:
 jobs:
 
   string_to_base64:
-    uses: tusharmathur08/officialworkflows/.github/workflows/base64.yaml@base64-workflow/
+    uses: tusharmathur08/officialworkflows/.github/workflows/base64.yaml@base64-workflow
     with:
        string_value: "test"
 
