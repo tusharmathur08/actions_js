@@ -16,6 +16,7 @@ jobs:
     needs: string_to_base64
     steps:
 
-      -name: Display base64 encoded value
-       run: echo "${{ needs.string_to_base64.outputs.base64_encoded_value }}"
+      - name: Display base64 encoded value
+        run: |
+             echo "${{ needs.string_to_base64.outputs.base64_encoded_value }}"
           
