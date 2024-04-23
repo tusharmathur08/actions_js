@@ -14,6 +14,7 @@ jobs:
 
   fetch_bas64:
     needs: string_to_base64
+    runs-on: ubuntu-latest
     steps:
 
       - name: Display base64 encoded value
