@@ -8,7 +8,7 @@ on:
 jobs:
 #Calling the reusable workflow directly using "uses:" command where we are providing the input string value as test
   string_to_base64:
-    uses: tusharmathur08/officialworkflows/.github/workflows/base64.yaml@base64-workflow
+    uses: tusharmathur08/officialworkflows/.github/workflows/base64.yaml@main
     with:
        string_value: "test"
 
