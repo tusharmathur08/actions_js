@@ -1,0 +1,21 @@
+name: testing base64 workflow
+
+on:
+  push:
+    branches:
+     - main
+
+jobs:
+
+  string_to_base64:
+    uses: tusharmathur08/officialworkflows/.github/workflows/base64.yaml@main
+    with:
+       string_value: "test"
+
+  fetch_bas64:
+    needs: string_to_base64
+    steps:
+
+      -name: Display base64 encoded value
+       run: echo "${{ needs.string_to_base64.outputs.base64_encoded_value }}"
+          
